@@ -1,8 +1,8 @@
 import { v4 as uuidv4 } from 'uuid';
+import { ObjectId } from 'mongodb';
 import RedisClient from '../utils/redis';
 import DBClient from '../utils/db';
 
-const { ObjectId } = require('mongodb');
 const fs = require('fs');
 const mime = require('mime-types');
 const Bull = require('bull');
