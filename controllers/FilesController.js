@@ -69,7 +69,7 @@ class FilesController {
       return true;
     });
 
-    await fs.writeFile(pathFile, buff, (error) => {
+    fs.writeFile(pathFile, buff, (error) => {
       if (error) return response.status(400).send({ error: error.message });
       return true;
     });
